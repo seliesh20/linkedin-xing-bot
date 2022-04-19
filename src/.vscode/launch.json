@@ -1,0 +1,22 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "php",
+            "request": "launch",
+            "name": "Listen to Xdebug",
+            "port": 9000
+        },
+        {
+            "type": "php",
+            "request": "launch",
+            "name": "Listen Currently Open Script",
+            "program": "${file}",
+            "cwd": "${fileDirname}",
+            "port": 9000
+        }
+    ]
+}

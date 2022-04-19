@@ -1,0 +1,18 @@
+<?php
+
+namespace App\AutoBot;
+
+use Illuminate\Support\Facades\Facade;
+
+class Bot extends Facade
+{
+    /**
+     * Get the registered name of the component.
+     *
+     * @return string
+     */
+    protected static function getFacadeAccessor()
+    {
+        return AutoBot::class;
+    }
+}
