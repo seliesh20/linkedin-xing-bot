@@ -1,0 +1,51 @@
+# docker
+/docker/logs/nginx/*
+!/docker/logs/nginx/.gitignore
+/docker/logs/mysql/*
+!/docker/logs/mysql/.gitignore
+/docker/mysql/data/*
+!/docker/mysql/data/.gitignore
+/docker/variables.env
+
+# Cache, session files and logs (Symfony3)
+/app/var/cache/*
+/app/var/logs/*
+/app/var/sessions/*
+!app/var/cache/.gitkeep
+!app/var/logs/.gitkeep
+!app/var/sessions/.gitkeep
+
+# Managed by Composer
+/app/var/bootstrap.php.cache
+/app/bin/*
+!bin/console
+!bin/symfony_requirements
+/app/vendor/
+
+# Assets and user uploads
+/app/web/bundles/
+/app/web/uploads/
+
+# PHPUnit
+/app/phpunit.xml
+
+# Build data
+/public/build/
+
+# Composer PHAR
+/composer.phar
+
+# Backup entities generated with doctrine:generate:entities command
+**/Entity/*~
+
+# Embedded web-server pid file
+/.web-server-pid
+
+
+/app/symfony.lock
+/app/yarn.lock
+/app/composer.lock
+/app/.env
+
+/app/tmp
+!/app/tmp/.gitignore
